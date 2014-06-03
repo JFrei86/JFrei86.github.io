@@ -1,71 +1,88 @@
-<HTML>
+<!DOCTYPE html>
+<html>
 	<head>
-		<title>Jesse Freitas</title>
-		<meta name="description" content="Student at Rensselaer Polytechnic Institute.">
-		<meta name="author" content="Jesse Freitas">
-		<link rel="stylesheet" href="styles.css">
-		<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500' rel='stylesheet' type='text/css'>
+		<title>Jesse A. Freitas</title>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='css/style.css' rel='stylesheet' type='text/css'>
+		
+		<script src='http://code.jquery.com/jquery.js'></script>
+		<script src='js/jquery-ui.js'></script>
+		<script src='js/main.js'></script>
+		<link rel="icon" type="image/png" href="/favicon.png">
+		<noscript><style> .jsonly { display: none } .inactive { display: inline; } </style></noscript>
 	</head>
-	<body style="margin:0px;">
-		<hr style="background-color: #FF3600;height: 10px; border: none; margin: 0px;">
-		<div id="wrap">
-			<div id="banner">
-				<div id="nav_logo" style="float:left;">
-					<H1>Jesse Freitas</H1>
-				</div>
-				<div id="header" style="float:left;">
-					<H2>Student</H2>
-				</div>
-				<div id="header" style="float:left;">
-					<H2>Developer</H2>
-				</div>
-				<div id="header" style="float:left;">
-					<H2>Adventurer</H2>
-				</div>
+	<body>
+		<div id="menu" class="social-hidden">
+			<div class="jsonly">
+				<img id="menu-button" src="resources/expand.png">
 			</div>
-			<div id="content">
-				<div id="nav_item">
-					<H2>About</H2>
-					<H3>Who I Am</H3>
-				</div>
-				<div id="section">	
-					<img style="float:left;background:#FFFFFF;margin:0px 10px 0 0;padding:10px;border:2px #333333;height:12.5em;box-shadow: 0px 3px 3px #CCCCCC" src="Capture.jpg">
-					<p>Hi! I am a computer science student at 
-Rensselaer Polytechnic Institute in Troy, New York. I'm from Massachusetts 
-and I'm looking for a software engineering internship at a quickly growing 
-company where I can solve interesting and complex technical challenges.</p>
-					<p>I'm an adventurer and always interested in
-meeting new people, new places, and new technologies. I'm also interested in 
-volunteering for organizations like Engineers Without Borders to help people
-outside of my community.</p>
-				</div>
-				<div id="nav_item">
-					<H2>Projects</H2>
-					<H3>Things I Work on</H3>
-				</div>
-				<div id="section">
-					<p>To see some of the 
-projects I've been working on, check out my github account <a href="http://www.github.com/jfrei86">here</a>. 
-In my spare time, I enjoy coding open source side projects and look for ways to contribute to the open source community.</p>
-				</div>
-				<div id="nav_item">
-					<H2>Resume</H2>
-					<H3>View my Experience</H3>
-				</div>
-				<div id="section">
-					<p>My resume is available <a href="/resume.pdf">here</a>. I am currently
-interested in a summer internship position, however I'd be happy to connect for future networking on <a href="http://www.linkedin.com/pub/jesse-freitas/58/206/a74">LinkedIn</a>.</p>
-				</div>
-				<div id="nav_item">
-					<H2>Contact</H2>
-					<H3>Get in Touch with Me</H3>
-				</div>
-				<div id="section">
-					<p>To get in touch for networking or work please contact me via email or check out <a href="http://www.linkedin.com/pub/jesse-freitas/58/206/a74">LinkedIn</a></p>
-					<h3>Jesse Freitas</br><a href="mailto:freitas.jesse@gmail.com">Email</a></br><a href="http://www.linkedin.com/pub/jesse-freitas/58/206/a74">LinkedIn</a></br></h3>
+			<a href="http://twitter.com/JFrei86"><img class="soc-button" src="resources/twitter.png"></a>
+			<a href="http://www.linkedin.com/pub/jesse-freitas/58/206/a74"><img class="soc-button" src="resources/linkedin.png"></a>
+			<a href="http://github.com/JFrei86"><img class="soc-button" src="resources/github.png"></a>
+			<a><img class="soc-button" src="resources/google.png"></a>
+		</div>
+		<div class="banner">
+			<div class="title">
+				<a href="#home"><img id="link-logo" src="resources/logo.png">
+				<h1 id="link-home">Jesse A. Freitas</h1></a>
+				<div class="header">
+					<h3>Student at <a href="http://www.rpi.edu" class="bold">Rensselaer</a>,</h3>
+					<h3>Open Source <a href="http://github.com/JFrei86" class="bold">Contributor</a>,</h3>
+					<h3>Coffee Lover.</h3>
+					<h2 id="link-projects"><a href="#projects">Projects</a></h2>
+					<a href="resources/resume.pdf"><h2 id="link-resume">Resume</h2></a>
+					<h2 id="link-contact"><a href="#contact">Contact</a></h2>
 				</div>
 			</div>
 		</div>
-	</body>	
-</HTML>
+		<div class="wrap">
+			<div class="page" id="home">
+				<img src="resources/profile.jpg">
+				<h1>Hello!</h1>
+				<p>I am junior in college studying Computer Science at Rensselaer Polytechnic Institute in Troy, NY.<p>
+				<p>At school I'm involved with the Rensselaer Center for Open Source Software working on various projects. 
+				I also work for the Computer Science department as an undergraduate mentor for students taking introductory
+				courses.</p>
+				<p>When I'm not doing school work, I enjoy rock climbing, camping, travelling, and spending time with friends.</p>
+			</div>
+			<div class="page inactive" id="projects">
+				<h1>Projects</h1>
+				<div class="project" id="bp">
+					<h2>1</h2>
+					<h3>Breakpoint</h3>
+					<br>
+					<p>A Windows Store app designed for Windows Phone and Windows 8.1. Breakpoint is a native app that allows you 
+					to manage issues and milestones on GitHub. The app is written in C#.</p>
+				</div>
+				<div class="project" id="hw">	
+					<h2>2</h2>
+					<h3>RPI CSCI HW Server</h3>
+					<br>
+					<p>The Computer Science Department uses a homework server which compiles and runs student code. This past year,
+					I worked on improving the grading algorithms for this server with a team of four other students. The server is
+					used by more than 500 students during a semester for Introduction to Data Structures and Introduction to Computer
+					Science. The algorithm "modules" and the configuration system for this server are written in C and C++.</p>
+				</div>
+				<div class="project" id="nlp">
+					<h2>3</h2>
+					<h3>News Detection</h3>
+					<br>
+					<p>Using Natural Language features and syntactic parsing of tweets from Twitter, I developed a supervised learning
+					model that can determine whether a Twitter trend is considered newsworthy. My work with this is being used to assist
+					research in generating summarized news articles from the detected tweets.</p>
+				</div>
+			</div>
+			<div class="page inactive" id="contact">
+				<h1>Get in touch</h1>
+				<p>Feel free to contact me via email or check out my <a href="http://www.linkedin.com/pub/jesse-freitas/58/206/a74">LinkedIn</a></p>
+				<p>To see some of my work, feel free to visit my <a href="http://github.com/JFrei86">Github</a> Profile.</p>
+					<br>
+					<a href="http://twitter.com/JFrei86"><img class="social" src="resources/twitter.png"></a>
+					<a href="http://www.linkedin.com/pub/jesse-freitas/58/206/a74"><img class="social" src="resources/linkedin.png"></a>
+					<a href="http://github.com/JFrei86"><img class="social" src="resources/github.png"></a>
+					<a ><img class="social" src="resources/google.png"></a>
+			</div>
+		</div>
+	</body>
+</html>
