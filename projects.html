@@ -31,51 +31,56 @@
   <body>
 
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
-
         <div class="cover-container">
-
           <div class="masthead clearfix">
             <div class="inner">
-              <ul class="nav masthead-nav shift">
+              <a href="index.html"><h3 class="masthead-brand">Jesse Freitas</h3></a>
+              <ul class="nav masthead-nav">
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
                 <li><a href="resources/resume.pdf">Resume</a></li>
-		            <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Jesse Freitas</h1>
-            <p class="lead">Student at Rensselaer, Open Source Contributor, Coffee Lover.</p>
-            <div class="jf-headers row">
-              <div class="jf-header col-md-4">
-                <h4>SCHOOL</h4>
-                <p>Rensselaer Polytechnic<br> Institute, 2016<p>
-              </div>
-              <div class="jf-header col-md-4">
-                <h4>CONTACT</h4>
-                <p>Get in touch with me at<br>
-                  <a href="mailto:freitas.jesse@gmail.com">freitas.jesse@gmail.com</a><p>
-              </div>
-              <div class="jf-header col-md-4">
-                <h4>SOCIAL</h4>
-                <p><a href="https://www.linkedin.com/pub/jesse-freitas/58/206/a74">LinkedIn</a> • <a href="http://twitter.com/JFrei86">Twitter</a> • <a href="http://github.com/JFrei86">Github</a></p>
+
+            <h2 class="cover-heading">Projects</h2>
+            <div class="media">
+              <div class="media-body project">
+                <h4 class="media-heading">Twitter Trend Newsworthiness</h4>
+                Using Natural Language features and syntactic parsing of tweets from Twitter, I developed a supervised learning
+                model that can determine whether a Twitter trend is considered newsworthy. My work with this is being used to assist
+                research in generating summarized news articles from the detected tweets.
               </div>
             </div>
+            <div class="media">
+              <div class="media-body project">
+                <h4 class="media-heading">RPI Computer Science Department  Homework Server</h4>
+                The Computer Science Department uses a homework server which compiles and runs student code. This past year,
+                I worked on improving the grading algorithms for this server with a team of four other students. The server is
+                used by more than 500 students during a semester for Introduction to Data Structures and Introduction to Computer
+                Science. The algorithm "modules" and the configuration system for this server are written in C and C++.
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-body project">
+                <h4 class="media-heading">Breakpoint for Windows 8.1</h4>
+                A Windows Store app designed for Windows RT and Windows 8.1. Breakpoint is a native app that allows you 
+                to manage issues and milestones on GitHub. The app is written in C# and uses XAML for the front end.
+              </div>
+            </div>
+
           </div>
 
           <div class="mastfoot">
             <div class="inner">
               <p>Cover template by <a href="https://twitter.com/mdo">@mdo</a>. Site Copyright 2014 Jesse Freitas</p>
           </div>
-
         </div>
-
       </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript
